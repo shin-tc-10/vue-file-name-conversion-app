@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>ファイル名変換アプリ</h1>
+    <h1>ファイル名一括変換アプリ</h1>
     <textarea
       v-model="inputText"
       placeholder="ファイル名を改行で入力"
