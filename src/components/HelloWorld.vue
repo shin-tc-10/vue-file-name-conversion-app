@@ -26,7 +26,10 @@ const message = ref("");
 const newFileNames = ref<string[]>([]);
 
 const formatFileName = (text: string): string => {
-  return text.toLowerCase().replace(/\s+/g, "-");
+  return text
+    .toLowerCase()
+    .replace(/,/g, "") // カンマを取り除く
+    .replace(/\s+/g, "-"); // スペースをハイフンに置き換え
 };
 
 const convertFileNames = () => {
